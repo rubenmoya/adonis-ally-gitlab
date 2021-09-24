@@ -1,5 +1,7 @@
 # Adonis Ally Gitlab Driver
 
+[![NPM version](https://img.shields.io/npm/v/adonis-ally-gitlab.svg)](https://www.npmjs.com/package/adonis-ally-gitlab)
+
 A [Gitlab](https://gitlab.com/) driver for [AdonisJS Ally](https://docs.adonisjs.com/guides/auth/social)
 
 ## Getting started
