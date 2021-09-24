@@ -12,7 +12,11 @@ Install the package from your command line.
 
 ```bash
 npm install --save adonis-ally-gitlab
-# or
+```
+
+or
+
+```bash
 yarn add adonis-ally-gitlab
 ```
 
