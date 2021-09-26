@@ -105,6 +105,10 @@ export class GitlabDriver extends Oauth2Driver<GitlabAccessToken, GitlabScopes> 
     return request
   }
 
+  /**
+   * Fetches the user info from the Gitlab API
+   * https://docs.gitlab.com/ee/api/users.html#list-current-user-for-normal-users
+   */
   protected async getUserInfo(
     token: string,
     callback?: (request: ApiRequest) => void
@@ -115,8 +119,16 @@ export class GitlabDriver extends Oauth2Driver<GitlabAccessToken, GitlabScopes> 
       callback(request)
     }
 
-    const user = await request.get()
+    const body = await request.get()
 
-    return user
+    return {
+      id: body.id,
+      nickName: body.username,
+      name: body.name,
+      email: body.email,
+      avatarUrl: body.avatar_url || null,
+      emailVerificationState: body.state === 'active' ? 'verified' : 'unverified',
+      original: body,
+    }
   }
 }
