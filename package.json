@@ -1,6 +1,6 @@
 {
   "name": "adonis-ally-gitlab",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Gitlab driver of AdonisJS Ally",
   "main": "build/providers/index.js",
   "files": [
