@@ -36,7 +36,7 @@
   "author": "Ruben Moya <@rubenmoya>",
   "license": "MIT",
   "devDependencies": {
-    "@adonisjs/ally": "4.0.0",
+    "@adonisjs/ally": "4.1.1",
     "@adonisjs/core": "5.1.8",
     "@types/node": "15.12.2",
     "copyfiles": "2.4.1",
