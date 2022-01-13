@@ -50,7 +50,7 @@ const allyConfig: AllyConfig = {
 }
 ```
 
-If you don't supply gitlabUrl, https.//www.gitlab.com/ will be used.
+If you don't supply gitlabUrl, https://www.gitlab.com/ will be used.
 
 When using self hosted gitlab,
 get the clientId and clientSecret from /admin/applications/ on your gitlab instance.
